@@ -1,6 +1,6 @@
-# 🚀 Convo AI - The Revolutionary Voice AI That Built a Global Cult
+# 🚀 Convo.wtf - The Revolutionary Voice AI That Built a Global Cult
 
-> **"The most powerful voice AI tool ever created - now yours to run locally"**
+> **"The most powerful Twitter Spaces AI tool ever created - now yours to run locally"**
 
 [![Windows Only](https://img.shields.io/badge/Platform-Windows%20Only-blue?style=for-the-badge&logo=windows)](https://windows.com)
 [![AI Powered](https://img.shields.io/badge/AI-Powered%20by%20Convo-orange?style=for-the-badge&logo=robot)](https://convo.wtf)
@@ -10,17 +10,17 @@
 
 **This isn't just another AI tool - this is the weapon that the convo.wtf team used to conquer the digital world.**
 
-Convo AI was the secret sauce behind one of the most viral AI phenomena in web3 history. While others were building basic chatbots, the convo team was crafting an AI that could hold conversations so natural, so engaging, that it built a cult following across every platform it touched.
+Convo AI was the secret sauce behind one of the most viral AI phenomena in web3 history. While others were building basic chatbots, the convo team was crafting an AI that could hold conversations so natural, so engaging, that it built a cult following across every twitter space it joined.
 
 ### 🏆 Recognition That Speaks Volumes
 
 Convo AI gained recognition from some of the biggest names in tech and web3:
 
-- **Solana Founder** 
-- **Base Founder** 
-- **Elon Musk** 
-- **Robert Scoble** 
-- **ElevenLabs** -  Acknowledged Convo's voice with honorary Voice ID: `1SM7GgM6IMuvQlz2BwM3`
+- [Anatoly Yakovenko (Solana founder)](https://x.com/aeyakovenko/status/1887559911095377952?s=46)  
+- [Jesse Pollak (creator of Coinbase’s L2 Base)](https://x.com/jessepollak/status/1894193080493887551?s=46)  
+- [Robert Scoble](https://x.com/scobleizer/status/1874956559937384450?s=46)  
+- [Elon Musk (reposted Robert Scoble’s post about Convo)](https://x.com/elonmusk/status/1893826073235775619?s=46)  
+- **ElevenLabs** — Acknowledged Convo's voice with honorary Voice ID: `1SM7GgM6IMuvQlz2BwM3`
 
 **The convo team had exclusive access to this technology. Now, for the first time ever, it's yours to run locally.**
 
