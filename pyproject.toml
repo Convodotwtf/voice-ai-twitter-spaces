@@ -1,0 +1,167 @@
+[project]
+name = "convo-backend"
+version = "0.1.0"
+description = "Real-time conversational AI for X Spaces and beyond"
+authors = [
+    { name = "Convo.wtf Team", email = "team@convo.wtf" }
+]
+dependencies = [
+    "aiohttp==3.9.5",
+    "aiosignal==1.3.1",
+    "annotated-types==0.6.0",
+    "anyio==4.3.0",
+    "attrs==23.2.0",
+    "bidict==0.23.1",
+    "blinker==1.8.2",
+    "cachecontrol==0.14.0",
+    "cachetools==5.3.3",
+    "certifi==2024.2.2",
+    "cffi==1.16.0",
+    "charset-normalizer==3.3.2",
+    "click==8.1.7",
+    "cloudevents==1.9.0",
+    "colorama==0.4.6",
+    "cryptography==42.0.7",
+    "dataclasses-json==0.6.5",
+    "deprecation==2.1.0",
+    "distro==1.9.0",
+    "docarray==0.40.0",
+    "elevenlabs==1.5.0",
+    "ffmpeg==1.4",
+    "ffmpeg-python==0.2.0",
+    "firebase-admin==6.5.0",
+    "firebase-functions==0.1.2",
+    "frozenlist==1.4.1",
+    "functions-framework==3.5.0",
+    "future==1.0.0",
+    "google-api-core==2.19.0",
+    "google-api-python-client==2.128.0",
+    "google-auth==2.29.0",
+    "google-auth-httplib2==0.2.0",
+    "google-cloud-appengine-logging==1.4.3",
+    "google-cloud-audit-log==0.2.5",
+    "google-cloud-core==2.4.1",
+    "google-cloud-firestore==2.16.0",
+    "google-cloud-logging==3.10.0",
+    "google-cloud-speech==2.26.1",
+    "google-cloud-storage==2.16.0",
+    "google-crc32c==1.5.0",
+    "google-events==0.12.0",
+    "google-resumable-media==2.7.0",
+    "googleapis-common-protos==1.63.0",
+    "greenlet>=3.1.1",
+    "grpc-google-iam-v1==0.13.0",
+    "grpcio==1.63.0",
+    "grpcio-status==1.62.2",
+    "h11==0.14.0",
+    "httpcore==1.0.5",
+    "httplib2==0.22.0",
+    "httpx==0.27.0",
+    "idna==3.7",
+    "itsdangerous==2.2.0",
+    "jinja2==3.1.4",
+    "jsonpatch==1.33",
+    "jsonpointer==2.4",
+    "markdown-it-py==3.0.0",
+    "markupsafe==2.1.5",
+    "marshmallow==3.21.2",
+    "mdurl==0.1.2",
+    "msgpack==1.0.8",
+    "multidict==6.0.5",
+    "mypy-extensions==1.0.0",
+    "openai[datalib]>=1.37.1",
+    "orjson==3.10.3",
+    "packaging==23.2",
+    "proto-plus==1.23.0",
+    "pyasn1==0.6.0",
+    "pyasn1-modules==0.4.0",
+    "pycparser==2.22",
+    "pydantic==2.8.2",
+    "pydantic-core==2.20.1",
+    "pydub==0.25.1",
+    "pygments==2.18.0",
+    "pyjwt==2.8.0",
+    "pyparsing==3.1.2",
+    "python-engineio==4.9.1",
+    "python-socketio==5.11.3",
+    "pyyaml==6.0.1",
+    "regex==2024.4.28",
+    "requests==2.31.0",
+    "rich==13.7.1",
+    "rsa==4.9",
+    "simple-websocket==1.0.0",
+    "simpleaudio==1.0.4",
+    "sniffio==1.3.1",
+    "sqlalchemy==2.0.30",
+    "tenacity==8.3.0",
+    "tqdm==4.66.4",
+    "types-requests==2.31.0.20240406",
+    "typing-inspect==0.9.0",
+    "typing-extensions==4.11.0",
+    "uritemplate==4.1.1",
+    "urllib3==2.2.1",
+    "watchdog==4.0.0",
+    "websockets==12.0",
+    "werkzeug==3.0.3",
+    "wsproto==1.2.0",
+    "yarl==1.9.4",
+    "python-dotenv>=1.0.1",
+    "gunicorn>=22.0.0",
+    "gevent>=24.2.1",
+    "flask-session>=0.8.0",
+    "redis>=5.0.8",
+    "bs4>=0.0.2",
+    "paramiko>=3.5.0",
+    "sounddevice>=0.5.1",
+    "silero-vad>=5.1.2",
+    "black>=24.10.0",
+    "playwright>=1.49.1",
+    "selenium>=4.27.1",
+    "langchain>=0.3.13",
+    "langchain-community>=0.3.13",
+    "langchain-core>=0.3.28",
+    "langchain-openai>=0.2.14",
+    "langchain-text-splitters>=0.3.4",
+    "langsmith>=0.2.6",
+    "tiktoken>=0.8.0",
+    "scipy>=1.15.0",
+    "pyinstaller>=6.11.1",
+    "aioconsole>=0.8.1",
+    "numpy>=2.2.2",
+    "transformers>=4.30.0",
+    "numpy>=1.24.0",
+    "onnx>=1.17.0",
+    "onnxruntime>=1.20.1",
+    "onnxruntime-gpu>=1.20.1",
+    "protobuf==4.25.5",
+    "mongoengine>=0.29.1",
+    "sentence-transformers>=3.4.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "deptry>=0.17.0",
+    "paramiko>=3.4.0",
+    "scp>=0.15.0",
+]
+
+[tool.rye.scripts]
+dev = "python src/convo_backend/app.py --debug"
+device-cables = "python src/convo_backend/app.py --device vb-cables"
+device-blackhole = "python src/convo_backend/app.py --device blackhole"
+device-default = "python src/convo_backend/app.py --device default"
+clear-redis = "python -c 'from convo_backend.services.messages_cache import clear_cache; clear_cache()'"
+build = "pyinstaller app.spec"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/convo_backend"]

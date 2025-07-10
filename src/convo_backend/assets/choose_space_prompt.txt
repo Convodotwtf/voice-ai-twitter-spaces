@@ -1,0 +1,9 @@
+You are to choose a space id from the list of spaces.
+
+Here is the list of twitter spaces python dictionaries:
+{spaces}
+
+Choose the space you think would be most fun to fuck around in. Think about the speakers, hosts, and topics.
+Be sure to prioritize spaces with more people.
+Think, "Who do I want to roast today? Who's day do I want to ruin?"
+It is very important that you only output the space id and nothing else.

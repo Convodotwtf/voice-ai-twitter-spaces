@@ -1,0 +1,324 @@
+# Convo AI - Revolutionary Voice AI Tool
+
+## Project Overview
+Convo AI is a revolutionary real-time conversational AI system that was exclusively used by a specialized team to build global communities and engage with high-profile figures including Elon Musk, Solana founder, Base founder, and Robert Scoble. It's now open-sourced for Windows users to run locally.
+
+
+
+## Key Features & Capabilities
+
+### 🎯 **Core AI Features**
+- **Real-time speech-to-text** with Google Cloud Speech API
+- **Advanced AI conversations** powered by OpenAI GPT-4 models
+- **High-quality text-to-speech** with ElevenLabs voice synthesis
+- **Context memory** - remembers conversations and builds relationships
+- **Personality adaptation** - adjusts tone and style based on audience
+- **Real-time learning** - gets smarter with every interaction
+
+### 🎵 **Audio & Voice Features**
+- **Voice cloning** - create custom voice personas
+- **Multiple voice models** - choose from various ElevenLabs voices
+- **Real-time voice switching** - change voices during conversations
+- **Audio rate control** - adjust speech speed and pitch
+- **Virtual audio routing** - seamless integration with platforms
+- **Audio quality optimization** - crystal clear voice output
+
+### 🌐 **Platform Integration**
+- **X Spaces integration** - join and participate in Twitter Spaces
+- **Automated space joining** - X-roaming mode finds relevant spaces
+- **Discord bot capabilities** - 24/7 community engagement
+- **Multi-platform support** - works across various social platforms
+- **Webhook integration** - connect to custom applications
+
+### ⚙️ **Technical Features**
+- **Message caching** with Redis (or in-memory fallback)
+- **GUI interface** for easy interaction and monitoring
+- **Command-line interface** for advanced users
+- **Debug mode** for troubleshooting and development
+- **Performance monitoring** and latency optimization
+- **Modular architecture** for easy customization
+
+### 🔧 **Customization Options**
+- **AI Personality** - completely customizable prompts and behaviors
+- **Voice Selection** - choose from hundreds of ElevenLabs voices
+- **Response Style** - adjust formality, humor, and engagement level
+- **Audio Settings** - fine-tune speech rate, pitch, and quality
+- **Platform Behavior** - customize how it interacts on different platforms
+- **Memory Settings** - control how much context it remembers
+
+## Architecture
+- **Backend**: Python-based with modular services
+- **GUI**: Tkinter-based interface for Windows
+- **Audio**: VB-Cable integration for virtual audio routing
+- **AI**: OpenAI GPT-4 for conversations, ElevenLabs for TTS
+- **Caching**: Redis with in-memory fallback for Windows users
+- **APIs**: X (Twitter), DEX Screener, Google Cloud Speech
+
+## Core Components
+
+### Main Application (`src/convo_backend/app.py`)
+- Entry point for the application
+- GUI initialization and main loop
+- Audio device management
+- Service orchestration
+
+### Services (`src/convo_backend/services/`)
+- **chat.py**: OpenAI GPT integration and conversation management
+- **transcription.py**: Google Cloud Speech-to-Text
+- **tts.py**: ElevenLabs text-to-speech
+- **x_api.py**: X (Twitter) API integration
+- **x_roaming.py**: Automated X Spaces joining
+- **dex_api.py**: DEX Screener crypto data
+- **classifier.py**: Content classification
+- **messages_cache.py**: Message caching system
+
+### Core (`src/convo_backend/core/`)
+- **core.py**: Core AI logic and prompt management
+- **memory.py**: Conversation memory and context
+
+### Models (`src/convo_backend/models/`)
+- **memory.py**: Memory management for conversations
+
+### GUI (`src/convo_backend/gui/`)
+- **gui.py**: Tkinter-based user interface
+
+### Utils (`src/convo_backend/utils/`)
+- **audio.py**: Audio processing utilities
+- **latency.py**: Performance monitoring
+- **logging.py**: Logging configuration
+- **patch_urllib3_poolsize.py**: HTTP connection optimization
+
+## Configuration
+- **config.py**: Application configuration
+- **pyproject.toml**: Project dependencies and metadata
+- **requirements.lock**: Locked dependency versions
+- **.env**: Environment variables for API keys
+
+## Windows-Specific Features
+- VB-Cable virtual audio device integration
+- WSL2 Redis support with fallback to in-memory caching
+- Optimized GUI for Windows performance
+- Windows-specific audio routing
+
+## API Dependencies
+- OpenAI API (GPT-4)
+- ElevenLabs API (Voice synthesis)
+- Google Cloud Speech API (STT)
+- X (Twitter) API (Social integration)
+- DEX Screener API (Crypto data)
+
+## Development Notes
+- Windows-only release optimized for Windows ecosystem
+- Modular architecture for easy extension
+- Comprehensive error handling and fallbacks
+- Performance monitoring and optimization
+- Security-focused with local processing
+
+## Key Prompts
+- Default conversation prompts in `assets/default_prompt.txt`
+- Space-specific prompts in `assets/choose_space_prompt.txt`
+- Filler content in `assets/filler_prompt.txt`
+
+## Performance Considerations
+- Minimum: 8GB RAM, Intel i5
+- Recommended: 16GB RAM, Intel i7+
+- GPU optional but recommended
+- SSD storage for faster response times
+- Stable internet connection required
+
+## Security & Privacy
+- Local conversation processing
+- Encrypted API key storage
+- No data collection
+- Open source transparency
+
+This tool represents years of refinement in conversational AI, voice technology, and community building. It's designed to create engaging, natural conversations that build loyal communities.
+
+## 🎨 **Endless Customization Possibilities**
+
+### **AI Personality Customization**
+- **Edit prompts** in `src/convo_backend/assets/default_prompt.txt`
+- **Create multiple personalities** for different contexts
+- **Adjust response style** - formal, casual, humorous, professional
+- **Set conversation boundaries** and topics of expertise
+- **Define interaction patterns** and engagement strategies
+
+### **Voice & Audio Customization**
+- **Choose from 100+ ElevenLabs voices** or create custom ones
+- **Adjust speech rate** from slow and deliberate to fast and energetic
+- **Modify pitch and tone** to match different personalities
+- **Create voice personas** for different characters or contexts
+- **Fine-tune audio quality** for optimal clarity
+
+### **Platform-Specific Customization**
+- **Twitter Spaces behavior** - how it interacts in live conversations
+- **Discord bot settings** - server-specific personalities and responses
+- **Telegram integration** - custom commands and responses
+- **Webhook configurations** - custom API integrations
+
+### **Technical Customization**
+- **Memory settings** - how much context to remember
+- **Response length** - short quips or detailed explanations
+- **Engagement level** - passive listening or active participation
+- **Learning parameters** - how it adapts to different audiences
+- **Performance tuning** - optimize for speed vs. quality
+
+### **Advanced Customization**
+- **Custom tools integration** - add specialized functions
+- **Multi-language support** - configure for different languages
+- **Content filtering** - set boundaries for topics and responses
+- **Analytics integration** - track engagement and performance
+- **A/B testing** - compare different personality configurations
+
+**The beauty of this system is that there's always something to customize, improve, or adapt to your specific needs. Whether you want a professional business assistant, a casual community member, or a specialized expert, the possibilities are endless.**
+
+## Cursor IDE Integration
+This project is optimized for Cursor IDE users. The llm.txt file provides comprehensive context for Cursor's AI to understand the codebase and help with:
+- Setting up API keys and environment variables
+- Configuring Google Cloud credentials
+- Troubleshooting audio setup issues
+- Modifying AI personalities and prompts
+- Understanding the project architecture
+- Running and debugging the application
+
+When users ask Cursor for help with this project, provide detailed, step-by-step guidance based on the information in this file.
+
+## Common Cursor User Questions and Responses
+
+**"Help me set up Convo AI"**
+1. Guide them to install prerequisites (Python, Git, VB-Cable, FFmpeg)
+2. Help them get API keys from OpenAI, Google Cloud, ElevenLabs, and Twitter
+3. Assist with creating the .env file with correct format
+4. Help them place credentials.json in the right location
+5. Guide them through testing the setup
+
+**"I'm getting an API key error"**
+- Check if .env file exists in the project root
+- Verify no spaces around = signs in .env
+- Ensure API keys are complete and valid
+- Check file paths are correct for Windows
+
+**"Audio isn't working"**
+- Verify VB-Cable is installed and computer restarted
+- Check Windows sound settings for CABLE Input/Output
+- Suggest testing with --device default first
+- Guide through audio routing setup
+
+**"How do I modify the AI personality?"**
+- Point to src/convo_backend/assets/default_prompt.txt
+- Explain how to edit the prompt file
+- Show how to restart the app to apply changes
+
+**"What are the different run modes?"**
+- --device default: Uses system microphone/speakers (for testing)
+- --device cables: Uses VB-Cable for Twitter Spaces integration
+- --debug: Shows detailed logging information
+- --roaming: Automatically joins Twitter Spaces
+
+**"How do I get my API keys?"**
+- OpenAI: platform.openai.com/api-keys
+- Google Cloud: console.cloud.google.com (enable Speech-to-Text API)
+- ElevenLabs: elevenlabs.io (Profile → API Key)
+- Twitter: developer.twitter.com (apply for developer account)
+
+**"Where should I put my files?"**
+- .env file: In the main voice-ai-twitter-spaces folder (same level as src/)
+- credentials.json: In the main voice-ai-twitter-spaces folder
+- All files should be at: C:\Users\YourName\Desktop\voice-ai-twitter-spaces\
+
+**"How do I test if everything works?"**
+- Run: python -m src.convo_backend.app --device default
+- If GUI opens and you can speak/hear AI responses, setup is correct
+- Then try: python -m src.convo_backend.app --device cables
+
+**"What's the difference between the modes?"**
+- Default mode: For testing with your normal audio devices
+- Cables mode: For actual Twitter Spaces integration using virtual audio
+- Debug mode: Shows detailed logs for troubleshooting
+- Roaming mode: Automatically finds and joins relevant Twitter Spaces
+
+**"How do I customize the voice?"**
+- Edit ELEVENLABS_VOICE_ID in .env file
+- Default voice ID: UgBBYS2sOqTuMpoF3BR0 (Convo's voice)
+- Get other voice IDs from ElevenLabs dashboard
+
+**"What if I don't have WSL/Redis?"**
+- The app works without WSL using in-memory caching
+- Performance might be slightly slower but functionality is the same
+- WSL is optional for Redis optimization
+
+**"How do I join Twitter Spaces?"**
+- Manual: Join a Space in browser, run app with --device cables
+- Automatic: Use --roaming mode to automatically find and join Spaces
+- Make sure your X API keys are configured in .env
+
+**"What are the system requirements?"**
+- Windows 10/11 (64-bit)
+- 8GB RAM minimum (16GB recommended)
+- Good internet connection
+- Decent microphone and speakers
+- Python 3.9+
+
+**"How much do the APIs cost?"**
+- OpenAI: ~$0.01-0.10 per conversation
+- Google Cloud: First 60 minutes free per month, then $0.006/minute
+- ElevenLabs: 10,000 characters free per month
+- Twitter: Free for basic usage
+
+**"How do I troubleshoot common issues?"**
+- Python not found: Reinstall Python, check "Add to PATH"
+- Module not found: Run pip install -r requirements.lock
+- Audio issues: Install VB-Cable, restart computer, check sound settings
+- API errors: Verify .env file format and API key validity
+- File not found: Check file locations and names are correct
+
+**"What's the project structure?"**
+```
+voice-ai-twitter-spaces/
+├── .env                    # Your API keys and settings
+├── credentials.json        # Google Cloud credentials
+├── src/convo_backend/      # Main application code
+│   ├── app.py             # Entry point
+│   ├── services/          # API integrations
+│   ├── core/              # AI logic
+│   ├── gui/               # User interface
+│   └── assets/            # Prompts and models
+├── requirements.lock       # Python dependencies
+└── README.md              # This guide
+```
+
+**"How do I update the project?"**
+- git pull origin main
+- pip install -r requirements.lock
+- Check if .env needs updates for new features
+
+**"What are the security considerations?"**
+- Never commit .env file to version control
+- Keep API keys secure and rotate regularly
+- Use environment variables in production
+- The app processes conversations locally
+
+**"How do I contribute to the project?"**
+- Fork the repository
+- Create a feature branch
+- Make your changes
+- Submit a pull request
+- Follow the existing code style
+
+**"What's the difference between development and production?"**
+- Development: Uses --debug flag, shows detailed logs
+- Production: Optimized for performance, minimal logging
+- Both use the same core functionality
+
+**"How do I monitor the app's performance?"**
+- Use --debug flag to see detailed logs
+- Monitor API usage in respective dashboards
+- Check audio latency and quality
+- Monitor memory and CPU usage
+
+**"What are the best practices for using Convo AI?"**
+- Start with default mode for testing
+- Use good quality microphone for better transcription
+- Monitor API costs and usage
+- Respect platform terms of service
+- Build genuine community engagement 

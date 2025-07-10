@@ -1,0 +1,219 @@
+================================================================================
+                    CONVO AI - WINDOWS SETUP GUIDE
+================================================================================
+
+Quick guide to get Convo AI running on Windows.
+
+================================================================================
+                            CHOOSE YOUR PATH
+================================================================================
+
+NON-TECHNICAL USERS:
+- Download Cursor IDE: https://cursor.sh
+- Open this project in Cursor
+- Ask Cursor: "Help me set up Convo AI"
+- Follow Cursor's step-by-step guidance
+
+TECHNICAL USERS:
+- Follow the command-line instructions below
+- Use the quick setup commands
+
+================================================================================
+                            PREREQUISITES
+================================================================================
+
+WHAT YOU NEED TO INSTALL:
+
+1. PYTHON 3.8+ (The programming language)
+   - Go to: https://www.python.org/downloads/
+   - Download the latest version
+   - IMPORTANT: Check "Add Python to PATH" during installation
+   - Test: Open Command Prompt and type "python --version"
+
+2. GIT (To download the code)
+   - Go to: https://git-scm.com/download/win
+   - Download and install with default settings
+
+3. VB-CABLE (For audio routing)
+   - Go to: https://vb-audio.com/Cable/
+   - Download "VB-Cable Driver"
+   - Install and restart your computer
+
+4. FFMPEG (For audio processing)
+   - Go to: https://ffmpeg.org/download.html#build-windows
+   - Download Windows version
+   - Extract to C:\ffmpeg
+   - Add to PATH: Search "Environment Variables" in Windows settings
+
+5. WSL (OPTIONAL - For better performance)
+   - Open PowerShell as Admin
+   - Type: wsl --install
+   - Restart computer when prompted
+
+================================================================================
+                            API KEYS (YOUR "PASSWORDS")
+================================================================================
+
+You need these API keys (think of them as special passwords):
+
+1. OPENAI API KEY (The AI brain)
+   - Go to: https://platform.openai.com/api-keys
+   - Sign up or log in
+   - Click "Create new secret key"
+   - Copy the key (starts with "sk-")
+   - Cost: About $0.01-0.10 per conversation
+
+2. GOOGLE CLOUD CREDENTIALS (For speech recognition)
+   - Go to: https://console.cloud.google.com/
+   - Create a new project
+   - Enable "Speech-to-Text API"
+   - Go to Credentials → Create Credentials → Service Account
+   - Download the JSON file
+   - Rename it to "credentials.json"
+   - Cost: First 60 minutes free per month
+
+3. ELEVENLABS API KEY (For voice synthesis)
+   - Go to: https://elevenlabs.io/
+   - Sign up for free account
+   - Go to Profile → API Key
+   - Copy your key
+   - Cost: 10,000 characters free per month
+
+4. X API KEYS (For Twitter integration - OPTIONAL)
+   - Go to: https://developer.twitter.com/
+   - Apply for developer account
+   - Create a new app
+   - Get API Key, API Secret, and Bearer Token
+   - Cost: Free for basic usage
+
+================================================================================
+                            SETUP (STEP BY STEP)
+================================================================================
+
+QUICK SETUP FOR DEVELOPERS:
+```bash
+git clone https://github.com/Convodotwtf/voice-ai-twitter-spaces.git
+cd voice-ai-twitter-spaces
+pip install -r requirements.lock
+cp .env.example .env
+# Edit .env with your API keys
+python -m src.convo_backend.app --device cables
+```
+
+DETAILED SETUP:
+
+1. DOWNLOAD THE CODE
+   - Open Command Prompt
+   - Type: git clone https://github.com/Convodotwtf/voice-ai-twitter-spaces.git
+- Type: cd voice-ai-twitter-spaces
+
+2. INSTALL DEPENDENCIES
+   - Type: pip install -r requirements.lock
+   - Wait for installation to complete
+
+3. SETUP YOUR FILES
+   - Copy .env.example to .env
+   - Edit .env with your API keys
+   - Place credentials.json in the main folder
+
+4. TEST YOUR SETUP
+   - Type: python -m src.convo_backend.app --device default
+   - If GUI opens, setup is successful!
+
+OPTIONAL: REDIS FOR BETTER PERFORMANCE
+   - Install WSL first (see prerequisites)
+   - In WSL Ubuntu terminal:
+   - sudo apt update
+   - sudo apt install redis-server
+   - sudo systemctl start redis-server
+
+================================================================================
+                            AUDIO SETUP (THE MAGIC PART)
+================================================================================
+
+VB-CABLE CREATES INVISIBLE AUDIO CABLES INSIDE YOUR COMPUTER
+
+SETUP STEPS:
+1. Open Windows Sound settings (right-click speaker icon)
+2. Click "Sound Control Panel" (on the right)
+3. You should see:
+   - CABLE Input (VB-Audio Virtual Cable)
+   - CABLE Output (VB-Audio Virtual Cable)
+
+TESTING:
+1. Open a Twitter Space in your browser
+2. Join with a different account
+3. Set CABLE Input as default playback device
+4. Set CABLE Output as default recording device
+5. Talk through the joined account - you should hear yourself
+
+ALTERNATIVE: Use default device mode for testing
+- Run: python -m src.convo_backend.app --device default
+- This uses your normal microphone and speakers
+
+================================================================================
+                            RUNNING THE APP
+================================================================================
+
+BASIC COMMANDS:
+```bash
+# Test mode (uses your normal microphone/speakers)
+python -m src.convo_backend.app --device default
+
+# Full mode (uses VB-Cable for Twitter Spaces)
+python -m src.convo_backend.app --device cables
+
+# Debug mode (shows more information)
+python -m src.convo_backend.app --debug
+
+# X-Roaming mode (automatically joins Twitter Spaces)
+python -m src.convo_backend.app --roaming
+```
+
+WHAT HAPPENS:
+1. A GUI window opens
+2. You can test microphone and speakers
+3. Try speaking - you should see text appear
+4. The AI should respond with voice
+5. If everything works, you're ready for Twitter Spaces!
+
+================================================================================
+                            TROUBLESHOOTING
+================================================================================
+
+COMMON PROBLEMS AND SOLUTIONS:
+
+"Python not found"
+- Reinstall Python and check "Add to PATH"
+- Restart Command Prompt
+
+"Module not found"
+- Make sure you're in the voice-ai-twitter-spaces folder
+- Run: pip install -r requirements.lock
+
+"No audio devices found"
+- Install VB-Cable properly
+- Restart your computer
+- Check Windows sound settings
+
+"API key error"
+- Double-check your .env file
+- Make sure there are no extra spaces
+- Verify your API keys are active
+
+"Can't hear the AI"
+- Check your speakers are on
+- Try default device mode first
+- Verify audio routing setup
+
+"File not found errors"
+- Make sure all files are in the right place
+- Check file names are exactly correct
+- Verify file paths in .env
+
+STILL STUCK?
+- Restart your computer
+- Try default device mode: python -m src.convo_backend.app --device default
+- Ask for help in the Convo AI Discord
+
+================================================================================ 

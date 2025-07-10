@@ -1,0 +1,104 @@
+.venv/
+
+*.pyc
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+*.egg-info/
+
+.env
+.flaskenv
+
+test.py
+
+# Google credentials
+google-credentials.json
+google-credentials-2.json
+credentials.json
+
+# Debugging files
+debug_audio.raw
+debug_audio.wav
+debug_mp3.mp3
+error_mp3.mp3
+*.mp3
+*.wav
+*.raw
+
+# Logs and databases
+*.rdb
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# Redis dump files
+dump.rdb
+
+# Deployment files (contain sensitive info)
+deploy_*.py
+
+# Configuration files with sensitive data
+config.local.json
+config.prod.json
+
+# Audio files
+dev.mp3
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Cache directories
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Excalidraw files (may contain sensitive diagrams)
+*.excalidraw
+
+# Wheel files
+*.whl
+
+# Python packaging
+*.egg
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+
+# Cursor IDE specific
+.cursorrules
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows specific
+*.lnk
