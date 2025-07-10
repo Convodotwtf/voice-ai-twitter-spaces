@@ -580,10 +580,10 @@ Your responses should be:
 
 ### Join the Cult
 - **Discord**: [convo.wtf/discord](https://discord.gg/5DMgrh5r)
-- **Twitter**: [@convo.wtf](https://x.com/convo.wtf)
+- **Twitter**: [@convodotwtf](https://x.com/convodotwtf)
 - **Website**: [convo.wtf](https://convo.wtf)
 - **Token Contract**: `KnrmAHo1wW2fGqVXcSZSpo6kmiKam5vNbDByrURpump`
-- **Disclaimer**: [convo.wtf/disclaimer](https://convo.wtf/disclaimer)
+- **Token Disclaimer**: [convo.wtf/disclaimer](https://convo.wtf/disclaimer)
 
 ### Getting Help
 - Check the [Windows Setup Guide](WINDOWS_SETUP_GUIDE.txt) for detailed instructions
@@ -636,4 +636,4 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 ---
 
-**⚠️ Disclaimer**: This tool is for educational and entertainment purposes. Use responsibly and respect platform terms of service. The convo.wtf team is not responsible for how you use this technology. For full disclaimer, visit [convo.wtf/disclaimer](https://convo.wtf/disclaimer).
+**⚠️ Disclaimer**: This tool is for educational and entertainment purposes. Use responsibly and respect platform terms of service. The convo.wtf team is not responsible for how you use this technology. For full Token disclaimer, visit [convo.wtf/disclaimer](https://convo.wtf/disclaimer).
