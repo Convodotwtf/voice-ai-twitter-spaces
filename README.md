@@ -1,6 +1,6 @@
 # 🚀 Convo.wtf - The Revolutionary Voice AI That Built a Global Cult
 
-> **"The most powerful Twitter Spaces AI tool ever created - now yours to run locally"**
+> **The most powerful Twitter Spaces AI tool ever created - now yours to run locally**
 
 [![Windows Only](https://img.shields.io/badge/Platform-Windows%20Only-blue?style=for-the-badge&logo=windows)](https://windows.com)
 [![AI Powered](https://img.shields.io/badge/AI-Powered%20by%20Convo-orange?style=for-the-badge&logo=robot)](https://convo.wtf)
@@ -82,7 +82,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 **Love from the convo.wtf team** ❤️  
 
-*"We built this to change the world. Now it's your turn."*
+*We built this to change the world. Now it's your turn.*
 
 ---
 
