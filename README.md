@@ -44,10 +44,10 @@ cd voice-ai-twitter-spaces
 pip install -r requirements.lock
 cp .env.example .env
 # Edit .env with your keys
-Run
-bash
-Copy
-Edit
+```
+
+## Run
+```bash
 # Default mic/speakers
 python -m src.convo_backend.app --device default
 
@@ -59,32 +59,28 @@ python -m src.convo_backend.app --debug
 
 # Auto join Spaces
 python -m src.convo_backend.app --roaming
-Audio Setup
-Install VB-Cable
+```
 
-Set CABLE Input as default playback
+## Audio Setup
+1. Install VB-Cable  
+2. Set **CABLE Input** as default playback  
+3. Set **CABLE Output** as default recording  
 
-Set CABLE Output as default recording
+## Customization
+- Edit `src/convo_backend/assets/default_prompt.txt` for personality  
+- Adjust voice settings in GUI  
 
-Customization
-Edit src/convo_backend/assets/default_prompt.txt for personality
-
-Adjust voice settings in GUI
-
-Troubleshooting
-Missing modules → pip install -r requirements.lock
-
-API errors → Check .env
-
-No audio → Reinstall VB-Cable, verify Windows sound settings
+## Troubleshooting
+- Missing modules → `pip install -r requirements.lock`  
+- API errors → Check `.env`  
+- No audio → Reinstall VB-Cable, verify Windows sound settings  
 
 ## 📄 License
-
 MIT License - See [LICENSE](LICENSE) for details.
 
 ---
 
-**Love from the convo.wtf team** ❤️
+**Love from the convo.wtf team** ❤️  
 
 *"We built this to change the world. Now it's your turn."*
 
