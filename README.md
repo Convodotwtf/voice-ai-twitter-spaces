@@ -24,30 +24,21 @@ Convo AI gained recognition from some of the biggest names in tech and web3:
 
 **The convo team had exclusive access to this technology. Now, for the first time ever, it's yours to run locally.**
 
-Requirements
-OS: Windows 10/11 (64-bit)
+## Requirements
+- **OS**: Windows 10/11 (64-bit)
+- **Python**: 3.9+
+- **RAM**: 8GB+ (16GB+ recommended)
+- **Dependencies**: Git, WSL2, VB-Cable, FFmpeg
+- **Internet**: Required
 
-Python: 3.9+
+## API Keys
+- `OPENAI_API_KEY` – GPT-4
+- `GOOGLE_APPLICATION_CREDENTIALS` – Google Speech-to-Text JSON path
+- `XI_API_KEY` – ElevenLabs
+- `X_API_KEY`, `X_API_SECRET`, `X_BEARER_TOKEN` – Twitter
 
-RAM: 8GB+ (16GB+ recommended)
-
-Dependencies: Git, WSL2, VB-Cable, FFmpeg
-
-Internet: Required
-
-API Keys
-OPENAI_API_KEY – GPT-4
-
-GOOGLE_APPLICATION_CREDENTIALS – Speech-to-Text JSON
-
-XI_API_KEY – ElevenLabs
-
-X_API_KEY, X_API_SECRET, X_BEARER_TOKEN – Twitter
-
-Install
-bash
-Copy
-Edit
+## Install
+```bash
 git clone https://github.com/Convodotwtf/voice-ai-twitter-spaces.git
 cd voice-ai-twitter-spaces
 pip install -r requirements.lock
@@ -78,22 +69,14 @@ Set CABLE Output as default recording
 Customization
 Edit src/convo_backend/assets/default_prompt.txt for personality
 
-Adjust voice in GUI
+Adjust voice settings in GUI
 
 Troubleshooting
 Missing modules → pip install -r requirements.lock
 
 API errors → Check .env
 
-No audio → Reinstall VB-Cable, check Windows sound settings
-
-Disclaimer
-For educational and entertainment use only. Respect platform terms.
-The convo.wtf team is not responsible for misuse.
-Full disclaimer: https://convo.wtf/disclaimer
-
-
----
+No audio → Reinstall VB-Cable, verify Windows sound settings
 
 ## 📄 License
 
